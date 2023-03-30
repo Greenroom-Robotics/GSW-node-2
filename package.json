@@ -1,5 +1,5 @@
 {
-  "name": "modern-wasm-starter",
+  "name": "gsw-node",
   "version": "0.0.1",
   "description": "A starter project for wasm node modules",
   "main": "dist/index.js",
@@ -7,7 +7,7 @@
   "license": "Unlicense",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TheLartians/modern-wasm-starter.git"
+    "url": "https://github.com/Greenroom-Robotics/GSW-node-2.git"
   },
   "devDependencies": {
     "@types/jest": "^27.0.2",

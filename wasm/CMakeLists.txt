@@ -23,18 +23,16 @@ cpmaddpackage("gh:TheLartians/Format.cmake@1.7.2")
 # bindings
 cpmaddpackage("gh:TheLartians/EmGlue@0.6.1")
 
-# using the ModernCppStarter as an example project for JS bindings replace this
-# with the library you want to use
-cpmaddpackage(NAME Greeter GITHUB_REPOSITORY TheLartians/ModernCppStarter
-              VERSION 0.17.3)
+# Add the lib here using a relative path
+cpmaddpackage(NAME TeosCpp SOURCE_DIR ../../lib/TeosCpp)
 
 # ---- Create wams glue library ----
 
 add_library(wasmGlue source/wasmGlue.cpp)
 set_target_properties(wasmGlue PROPERTIES CXX_STANDARD 17)
 
-# link dependencies, replace `Greeter::Greeter` with your library
-target_link_libraries(wasmGlue PUBLIC Glue Greeter::Greeter)
+# link dependencies, replace `TeosBase::TeosBase` with your library
+target_link_libraries(wasmGlue PUBLIC Glue TeosCpp::TeosCpp)
 
 # ---- Create main library ----
 

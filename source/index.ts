@@ -1,9 +1,9 @@
 export {
-  withWasm as withGreeter,
-  withWasmScope as withGreeterScope,
-  persistWasmValue as persistGreeterValue,
-  deletePersistedValue as deleteGreeterValue,
-  GlueModule as GreeterModule,
+  withWasm as withGsw,
+  withWasmScope as withGswScope,
+  persistWasmValue as persistGswValue,
+  deletePersistedValue as deleteGswValue,
+  GlueModule as GswModule,
 } from "./wasmWrapper";
 
-export type { Greeter, LanguageCode } from "./WasmModule";
+export type { TeosBase, TeosSea, TeosIce } from "./WasmModule";
